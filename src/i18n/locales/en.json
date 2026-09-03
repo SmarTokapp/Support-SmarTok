@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "support": "Support",
+    "transparency": "Transparency",
+    "breakdown": "Breakdown",
+    "supportNow": "Support Now"
+  },
+  "hero": {
+    "badge": "Platform Infrastructure Fund",
+    "headline": "Support the",
+    "headlineHighlight": "Intellectual Revolution",
+    "subtext": "Your support helps keep SmarTok's infrastructure running and keeps the platform available for high-value, educational content. Contributions are strictly for platform support and do not provide access to additional features, subscriptions, badges, or digital content within SmarTok.",
+    "videoLabel": "Promo Video",
+    "scrollCta": "Support the platform"
+  },
+  "contribution": {
+    "title": "Choose Your",
+    "titleHighlight": "Contribution",
+    "subtitle": "Select a tier or enter a custom amount. Every contribution goes directly toward keeping SmarTok online and accessible.",
+    "custom": "Custom",
+    "amountLabel": "Contribution Amount",
+    "cta": "Support SmarTok",
+    "disclaimer": "Contributions are for platform infrastructure support only and do not grant access to any features, subscriptions, badges, or digital content within SmarTok."
+  },
+  "transparency": {
+    "badge": "Full Transparency",
+    "title": "Transparency",
+    "titleHighlight": "Board",
+    "subtitle": "We believe in complete openness. Every contribution and every expense is tracked and published here.",
+    "currentMonth": "Current Month",
+    "summary": {
+      "supportReceived": "Support Received",
+      "infrastructureCosts": "Infrastructure Costs",
+      "reserved": "Reserved for Future Costs"
+    },
+    "costCoverage": "Cost Coverage",
+    "covered": "covered",
+    "detailedBreakdown": "Detailed Breakdown",
+    "totalInfrastructureCosts": "Total Infrastructure Costs",
+    "historical": "Historical",
+    "allTime": "All-Time",
+    "historicalSummary": {
+      "totalSupport": "Total Support Received",
+      "totalExpenses": "Total Expenses",
+      "reservedBalance": "Current Reserved Balance"
+    },
+    "breakdown": {
+      "aws": "AWS Hosting",
+      "cdn": "CDN (Content Delivery)",
+      "render": "Render (API Services)",
+      "database": "Database (PostgreSQL)",
+      "ionos": "IONOS (Domain & DNS)",
+      "security": "Security & SSL",
+      "moderation": "Moderation & AI Safety"
+    }
+  },
+  "footer": {
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "transparency": "Transparency",
+    "disclaimer": "SmarTok is a platform for high-value, educational content. All contributions are used exclusively for platform infrastructure and operational costs. Contributions do not provide access to any features, subscriptions, badges, or digital content.",
+    "copyright": "© 2026 SmarTok. All rights reserved."
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last Updated: September 2026",
+    "intro": "Welcome to SmarTok. By using our platform, you agree to the following terms and conditions.",
+    "sections": {
+      "1_heading": "1. Platform Description",
+      "1_body": "SmarTok is a platform designed for high-value, educational content. Our services are provided to users free of charge, supported by voluntary contributions to our infrastructure fund.",
+      "2_heading": "2. Contributions",
+      "2_body": "All contributions made through the Support SmarTok page are strictly for platform infrastructure support. Contributions do not grant access to any additional features, subscriptions, badges, or digital content within SmarTok.",
+      "3_heading": "3. User Conduct",
+      "3_body": "Users are expected to engage respectfully and constructively. Content that violates our community guidelines may be removed, and accounts may be suspended at our discretion.",
+      "4_heading": "4. Intellectual Property",
+      "4_body": "All content published on SmarTok remains the property of its respective creators. Users retain ownership of their content and grant SmarTok a license to display it on the platform.",
+      "5_heading": "5. Privacy",
+      "5_body": "We respect your privacy. Our privacy policy describes how we collect, use, and protect your personal information.",
+      "6_heading": "6. Limitation of Liability",
+      "6_body": "SmarTok is provided \"as is\" without warranties of any kind. We are not liable for any damages arising from the use of our platform.",
+      "7_heading": "7. Changes to Terms",
+      "7_body": "We reserve the right to update these terms at any time. Continued use of the platform after changes constitutes acceptance of the updated terms."
+    },
+    "back": "Back to Home"
+  }
+}

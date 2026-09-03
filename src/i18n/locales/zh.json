@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "support": "支持",
+    "transparency": "透明度",
+    "breakdown": "明细",
+    "supportNow": "立即支持"
+  },
+  "hero": {
+    "badge": "平台基础设施基金",
+    "headline": "支持",
+    "headlineHighlight": "知识革命",
+    "subtext": "您的支持帮助维持SmarTok的基础设施运行，并确保平台持续提供高价值的教育内容。贡献严格用于平台支持，不提供对SmarTok内额外功能、订阅、徽章或数字内容的访问权限。",
+    "videoLabel": "宣传视频",
+    "scrollCta": "支持平台"
+  },
+  "contribution": {
+    "title": "选择您的",
+    "titleHighlight": "贡献",
+    "subtitle": "选择一个等级或输入自定义金额。每笔贡献都直接用于保持SmarTok在线和可访问。",
+    "custom": "自定义",
+    "amountLabel": "贡献金额",
+    "cta": "支持 SmarTok",
+    "disclaimer": "贡献仅用于平台基础设施支持，不授予对SmarTok内任何功能、订阅、徽章或数字内容的访问权限。"
+  },
+  "transparency": {
+    "badge": "完全透明",
+    "title": "透明度",
+    "titleHighlight": "看板",
+    "subtitle": "我们相信完全公开。每笔贡献和每笔支出都在此处追踪和公布。",
+    "currentMonth": "当前月份",
+    "summary": {
+      "supportReceived": "已收支持",
+      "infrastructureCosts": "基础设施成本",
+      "reserved": "预留未来成本"
+    },
+    "costCoverage": "成本覆盖",
+    "covered": "已覆盖",
+    "detailedBreakdown": "详细明细",
+    "totalInfrastructureCosts": "总基础设施成本",
+    "historical": "历史",
+    "allTime": "全部历史",
+    "historicalSummary": {
+      "totalSupport": "已收总支持",
+      "totalExpenses": "总支出",
+      "reservedBalance": "当前预留余额"
+    },
+    "breakdown": {
+      "aws": "AWS 托管",
+      "cdn": "CDN（内容分发）",
+      "render": "Render（API服务）",
+      "database": "数据库（PostgreSQL）",
+      "ionos": "IONOS（域名和DNS）",
+      "security": "安全和SSL",
+      "moderation": "审核和AI安全"
+    }
+  },
+  "footer": {
+    "privacy": "隐私",
+    "terms": "条款",
+    "transparency": "透明度",
+    "disclaimer": "SmarTok是一个高价值教育内容平台。所有贡献仅用于平台基础设施和运营成本。贡献不提供对任何功能、订阅、徽章或数字内容的访问权限。",
+    "copyright": "© 2026 SmarTok. 保留所有权利。"
+  },
+  "terms": {
+    "title": "服务条款",
+    "lastUpdated": "最后更新：2026年9月",
+    "intro": "欢迎使用SmarTok。使用我们的平台即表示您同意以下条款和条件。",
+    "sections": {
+      "1_heading": "1. 平台描述",
+      "1_body": "SmarTok是一个为高价值教育内容设计的平台。我们的服务免费提供给用户，由我们基础设施基金的自愿贡献支持。",
+      "2_heading": "2. 贡献",
+      "2_body": "通过支持SmarTok页面进行的所有贡献严格用于平台基础设施支持。贡献不授予对SmarTok内额外功能、订阅、徽章或数字内容的访问权限。",
+      "3_heading": "3. 用户行为",
+      "3_body": "用户应以尊重和建设性的方式互动。违反我们社区准则的内容可能会被删除，账户可能会被我们自行暂停。",
+      "4_heading": "4. 知识产权",
+      "4_body": "在SmarTok上发布的所有内容仍归各自创作者所有。用户保留其内容的所有权，并授予SmarTok在平台上显示的许可。",
+      "5_heading": "5. 隐私",
+      "5_body": "我们尊重您的隐私。我们的隐私政策描述了我们如何收集、使用和保护您的个人信息。",
+      "6_heading": "6. 责任限制",
+      "6_body": "SmarTok按\"原样\"提供，不附带任何形式的保证。我们对使用我们的平台所产生的任何损害不承担责任。",
+      "7_heading": "7. 条款变更",
+      "7_body": "我们保留随时更新这些条款的权利。变更后继续使用平台即表示接受更新的条款。"
+    },
+    "back": "返回首页"
+  }
+}

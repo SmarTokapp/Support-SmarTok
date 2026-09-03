@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "support": "지원",
+    "transparency": "투명성",
+    "breakdown": "내역",
+    "supportNow": "지원하기"
+  },
+  "hero": {
+    "badge": "플랫폼 인프라 기금",
+    "headline": "지식 혁명을",
+    "headlineHighlight": "지원하세요",
+    "subtext": "여러분의 지원은 SmarTok의 인프라를 유지하고 고품질 교육 콘텐츠를 위한 플랫폼을 이용 가능하게 유지하는 데 도움이 됩니다. 기부는 엄격하게 플랫폼 지원을 위한 것이며, SmarTok 내의 추가 기능, 구독, 배지 또는 디지털 콘텐츠에 대한 접근을 제공하지 않습니다.",
+    "videoLabel": "프로모션 영상",
+    "scrollCta": "플랫폼 지원하기"
+  },
+  "contribution": {
+    "title": "당신의",
+    "titleHighlight": "기여를 선택하세요",
+    "subtitle": "티어를 선택하거나 사용자 정의 금액을 입력하세요. 모든 기여는 SmarTok을 온라인으로 유지하는 데 직접 사용됩니다.",
+    "custom": "사용자 정의",
+    "amountLabel": "기여 금액",
+    "cta": "SmarTok 지원하기",
+    "disclaimer": "기여는 플랫폼 인프라 지원만을 위한 것이며, SmarTok 내의 기능, 구독, 배지 또는 디지털 콘텐츠에 대한 접근 권한을 부여하지 않습니다."
+  },
+  "transparency": {
+    "badge": "완전한 투명성",
+    "title": "투명성",
+    "titleHighlight": "보드",
+    "subtitle": "우리는 완전한 공개를 믿습니다. 모든 기여와 지출은 여기에서 추적되고 공개됩니다.",
+    "currentMonth": "현재 월",
+    "summary": {
+      "supportReceived": "받은 지원",
+      "infrastructureCosts": "인프라 비용",
+      "reserved": "미래 비용을 위해 예약"
+    },
+    "costCoverage": "비용 커버리지",
+    "covered": "커버됨",
+    "detailedBreakdown": "상세 내역",
+    "totalInfrastructureCosts": "총 인프라 비용",
+    "historical": "역사",
+    "allTime": "전체 기간",
+    "historicalSummary": {
+      "totalSupport": "받은 총 지원",
+      "totalExpenses": "총 지출",
+      "reservedBalance": "현재 예약 잔액"
+    },
+    "breakdown": {
+      "aws": "AWS 호스팅",
+      "cdn": "CDN (콘텐츠 전송)",
+      "render": "Render (API 서비스)",
+      "database": "데이터베이스 (PostgreSQL)",
+      "ionos": "IONOS (도메인 및 DNS)",
+      "security": "보안 및 SSL",
+      "moderation": "모더레이션 및 AI 안전"
+    }
+  },
+  "footer": {
+    "privacy": "개인정보",
+    "terms": "약관",
+    "transparency": "투명성",
+    "disclaimer": "SmarTok은 고품질 교육 콘텐츠를 위한 플랫폼입니다. 모든 기여는 플랫폼 인프라 및 운영 비용에만 사용됩니다. 기여는 기능, 구독, 배지 또는 디지털 콘텐츠에 대한 접근을 제공하지 않습니다.",
+    "copyright": "© 2026 SmarTok. 모든 권리 보유."
+  },
+  "terms": {
+    "title": "이용약관",
+    "lastUpdated": "최종 업데이트: 2026년 9월",
+    "intro": "SmarTok에 오신 것을 환영합니다. 당사 플랫폼을 사용함으로써 다음 약관에 동의하게 됩니다.",
+    "sections": {
+      "1_heading": "1. 플랫폼 설명",
+      "1_body": "SmarTok은 고품질 교육 콘텐츠를 위한 플랫폼입니다. 당사의 서비스는 인프라 기금에 대한 자발적 기여를 통해 무료로 제공됩니다.",
+      "2_heading": "2. 기여",
+      "2_body": "SmarTok 지원 페이지를 통해 이루어진 모든 기여는 엄격하게 플랫폼 인프라 지원을 위한 것입니다. 기여는 SmarTok 내의 추가 기능, 구독, 배지 또는 디지털 콘텐츠에 대한 접근 권한을 부여하지 않습니다.",
+      "3_heading": "3. 사용자 행동",
+      "3_body": "사용자는 존중과 건설적인 방식으로 상호작용할 것으로 기대됩니다. 커뮤니티 가이드라인을 위반하는 콘텐츠는 삭제될 수 있으며, 계정은 당사의 재량으로 정지될 수 있습니다.",
+      "4_heading": "4. 지적 재산권",
+      "4_body": "SmarTok에 게시된 모든 콘텐츠는 각 크리에이터의 소유입니다. 사용자는 콘텐츠의 소유권을 유지하며, SmarTok에게 플랫폼에 표시할 라이선스를 부여합니다.",
+      "5_heading": "5. 개인정보",
+      "5_body": "귀하의 개인정보를 존중합니다. 개인정보 처리방침은 귀하의 개인정보를 수집, 사용 및 보호하는 방법을 설명합니다.",
+      "6_heading": "6. 책임 제한",
+      "6_body": "SmarTok은 어떠한 종류의 보증 없이 \"있는 그대로\" 제공됩니다. 당사 플랫폼 사용으로 인해 발생하는 어떠한 손해에 대해서도 책임을 지지 않습니다.",
+      "7_heading": "7. 약관 변경",
+      "7_body": "당사는 언제든지 이 약관을 업데이트할 권리를 보유합니다. 변경 후 플랫폼을 계속 사용하면 업데이트된 약관에 동의한 것으로 간주됩니다."
+    },
+    "back": "홈으로 돌아가기"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "support": "Soporte",
+    "transparency": "Transparencia",
+    "breakdown": "Desglose",
+    "supportNow": "Apoyar Ahora"
+  },
+  "hero": {
+    "badge": "Fondo de Infraestructura de la Plataforma",
+    "headline": "Apoya la",
+    "headlineHighlight": "Revolución Intelectual",
+    "subtext": "Tu apoyo ayuda a mantener la infraestructura de SmarTok funcionando y mantiene la plataforma disponible para contenido educativo de alto valor. Las contribuciones son estrictamente para el soporte de la plataforma y no proporcionan acceso a funciones adicionales, suscripciones, insignias o contenido digital dentro de SmarTok.",
+    "videoLabel": "Video Promocional",
+    "scrollCta": "Apoya la plataforma"
+  },
+  "contribution": {
+    "title": "Elige Tu",
+    "titleHighlight": "Contribución",
+    "subtitle": "Selecciona un nivel o ingresa una cantidad personalizada. Cada contribución va directamente a mantener SmarTok en línea y accesible.",
+    "custom": "Personalizado",
+    "amountLabel": "Cantidad de Contribución",
+    "cta": "Apoyar SmarTok",
+    "disclaimer": "Las contribuciones son únicamente para el soporte de infraestructura de la plataforma y no otorgan acceso a ninguna función, suscripción, insignia o contenido digital dentro de SmarTok."
+  },
+  "transparency": {
+    "badge": "Transparencia Total",
+    "title": "Panel de",
+    "titleHighlight": "Transparencia",
+    "subtitle": "Creemos en la apertura completa. Cada contribución y cada gasto es rastreado y publicado aquí.",
+    "currentMonth": "Mes Actual",
+    "summary": {
+      "supportReceived": "Apoyo Recibido",
+      "infrastructureCosts": "Costos de Infraestructura",
+      "reserved": "Reservado para Costos Futuros"
+    },
+    "costCoverage": "Cobertura de Costos",
+    "covered": "cubierto",
+    "detailedBreakdown": "Desglose Detallado",
+    "totalInfrastructureCosts": "Costos Totales de Infraestructura",
+    "historical": "Histórico",
+    "allTime": "Histórico Total",
+    "historicalSummary": {
+      "totalSupport": "Apoyo Total Recibido",
+      "totalExpenses": "Gastos Totales",
+      "reservedBalance": "Saldo Reservado Actual"
+    },
+    "breakdown": {
+      "aws": "Hosting AWS",
+      "cdn": "CDN (Entrega de Contenido)",
+      "render": "Render (Servicios API)",
+      "database": "Base de Datos (PostgreSQL)",
+      "ionos": "IONOS (Dominio y DNS)",
+      "security": "Seguridad y SSL",
+      "moderation": "Moderación y Seguridad IA"
+    }
+  },
+  "footer": {
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "transparency": "Transparencia",
+    "disclaimer": "SmarTok es una plataforma para contenido educativo de alto valor. Todas las contribuciones se utilizan exclusivamente para costos de infraestructura y operación de la plataforma. Las contribuciones no proporcionan acceso a ninguna función, suscripción, insignia o contenido digital.",
+    "copyright": "© 2026 SmarTok. Todos los derechos reservados."
+  },
+  "terms": {
+    "title": "Términos de Servicio",
+    "lastUpdated": "Última Actualización: Septiembre 2026",
+    "intro": "Bienvenido a SmarTok. Al usar nuestra plataforma, aceptas los siguientes términos y condiciones.",
+    "sections": {
+      "1_heading": "1. Descripción de la Plataforma",
+      "1_body": "SmarTok es una plataforma diseñada para contenido educativo de alto valor. Nuestros servicios se proporcionan a los usuarios de forma gratuita, respaldados por contribuciones voluntarias a nuestro fondo de infraestructura.",
+      "2_heading": "2. Contribuciones",
+      "2_body": "Todas las contribuciones realizadas a través de la página de Apoyo a SmarTok son estrictamente para el soporte de infraestructura de la plataforma. Las contribuciones no otorgan acceso a funciones adicionales, suscripciones, insignias o contenido digital dentro de SmarTok.",
+      "3_heading": "3. Conducta del Usuario",
+      "3_body": "Se espera que los usuarios interactúen de manera respetuosa y constructiva. El contenido que viole nuestras directrices comunitarias puede ser eliminado, y las cuentas pueden ser suspendidas a nuestra discreción.",
+      "4_heading": "4. Propiedad Intelectual",
+      "4_body": "Todo el contenido publicado en SmarTok sigue siendo propiedad de sus respectivos creadores. Los usuarios conservan la propiedad de su contenido y otorgan a SmarTok una licencia para mostrarlo en la plataforma.",
+      "5_heading": "5. Privacidad",
+      "5_body": "Respetamos tu privacidad. Nuestra política de privacidad describe cómo recopilamos, usamos y protegemos tu información personal.",
+      "6_heading": "6. Limitación de Responsabilidad",
+      "6_body": "SmarTok se proporciona \"tal cual\" sin garantías de ningún tipo. No somos responsables de ningún daño que surja del uso de nuestra plataforma.",
+      "7_heading": "7. Cambios a los Términos",
+      "7_body": "Nos reservamos el derecho de actualizar estos términos en cualquier momento. El uso continuado de la plataforma después de los cambios constituye la aceptación de los términos actualizados."
+    },
+    "back": "Volver al Inicio"
+  }
+}
