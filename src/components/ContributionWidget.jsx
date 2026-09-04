@@ -1,6 +1,14 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
+const STRIPE_LINKS = {
+  5: 'https://buy.stripe.com/28E6oHgNCaGb4nX64be3e00',
+  10: 'https://buy.stripe.com/7sYeVd2WM9C7aMlgIPe3e01',
+  25: 'https://buy.stripe.com/fZu6oH7d2cOj8Ed1NVe3e02',
+  50: 'https://buy.stripe.com/3cIdR954U15B1bL78fe3e03',
+  custom: 'https://buy.stripe.com/00w9AT40Q3dJ3jTeAHe3e04',
+}
+
 const TIERS = [5, 10, 25, 50]
 
 export default function ContributionWidget({ selectedTier, onSelectTier }) {
@@ -29,9 +37,10 @@ export default function ContributionWidget({ selectedTier, onSelectTier }) {
     }
   }
 
-  const displayAmount = isCustom
-    ? (customAmount || '0')
-    : `$${selectedTier}`
+  const getStripeLink = () => {
+    if (isCustom) return STRIPE_LINKS.custom
+    return STRIPE_LINKS[selectedTier] || STRIPE_LINKS.custom
+  }
 
   return (
     <section id="support" className="relative py-20 px-4 sm:px-6 lg:px-8 scroll-mt-20">
@@ -52,11 +61,14 @@ export default function ContributionWidget({ selectedTier, onSelectTier }) {
           {/* Tier buttons */}
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-6">
             {TIERS.map((amount) => (
-              <button
+              <a
                 key={amount}
+                href={STRIPE_LINKS[amount]}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => handleSelect(amount)}
                 className={`
-                  relative py-4 rounded-xl font-bold text-lg transition-all duration-200
+                  relative py-4 rounded-xl font-bold text-lg transition-all duration-200 cursor-pointer text-center no-underline
                   ${!isCustom && selectedTier === amount
                     ? 'bg-smartok-cyan/15 border-2 border-smartok-cyan text-smartok-cyan neon-text scale-105'
                     : 'bg-smartok-card/50 border border-white/10 text-gray-400 hover:border-smartok-cyan/30 hover:text-white'
@@ -71,7 +83,7 @@ export default function ContributionWidget({ selectedTier, onSelectTier }) {
                     </svg>
                   </span>
                 )}
-              </button>
+              </a>
             ))}
 
             {/* Custom amount button */}
@@ -110,11 +122,14 @@ export default function ContributionWidget({ selectedTier, onSelectTier }) {
           </div>
 
           {/* CTA button */}
-          <button
-            className="w-full py-4 rounded-xl font-bold text-lg text-smartok-bg bg-gradient-to-r from-smartok-cyan to-smartok-neon hover:from-smartok-cyan hover:to-smartok-cyan transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,243,255,0.4)] active:scale-[0.98]"
+          <a
+            href={getStripeLink()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full py-4 rounded-xl font-bold text-lg text-center text-smartok-bg bg-gradient-to-r from-smartok-cyan to-smartok-neon hover:from-smartok-cyan hover:to-smartok-cyan transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,243,255,0.4)] active:scale-[0.98]"
           >
             {t('contribution.cta')}
-          </button>
+          </a>
 
           {/* Disclaimer */}
           <p className="mt-4 text-xs text-gray-500 text-center leading-relaxed">
