@@ -33,6 +33,14 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
+            <a
+              href="https://smartok.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-400 hover:text-smartok-cyan transition-colors"
+            >
+              {t('nav.officialWebsite')}
+            </a>
             <LanguageSwitcher />
             <a
               href="#support"
@@ -83,6 +91,15 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
+          <a
+            href="https://smartok.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMenuOpen(false)}
+            className="block px-4 py-3 rounded-xl text-sm text-gray-400 hover:text-smartok-cyan hover:bg-smartok-cyan/5 border border-transparent hover:border-smartok-cyan/20 transition-all"
+          >
+            {t('nav.officialWebsite')}
+          </a>
         </div>
       </div>
     </nav>
