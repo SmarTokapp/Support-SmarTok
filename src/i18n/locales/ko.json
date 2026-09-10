@@ -4,7 +4,13 @@
     "transparency": "투명성",
     "breakdown": "내역",
     "officialWebsite": "SmarTok 공식",
-    "supportNow": "지원하기"
+    "supportNow": "지원하기",
+    "webApp": "SmarTok",
+    "getApp": "앱 받기"
+  },
+  "webapp": {
+    "exit": "웹사이트로 돌아가기",
+    "exitAria": "데모 종료"
   },
   "hero": {
     "badge": "플랫폼 인프라 기금",
@@ -12,7 +18,8 @@
     "headlineHighlight": "지원하세요",
     "subtext": "여러분의 지원은 SmarTok의 인프라를 유지하고 고품질 교육 콘텐츠를 위한 플랫폼을 이용 가능하게 유지하는 데 도움이 됩니다. 기부는 엄격하게 플랫폼 지원을 위한 것이며, SmarTok 내의 추가 기능, 구독, 배지 또는 디지털 콘텐츠에 대한 접근을 제공하지 않습니다.",
     "videoLabel": "프로모션 영상",
-    "scrollCta": "플랫폼 지원하기"
+    "scrollCta": "플랫폼 지원하기",
+    "downloadBtn": "Google Play에서 다운로드"
   },
   "contribution": {
     "title": "당신의",

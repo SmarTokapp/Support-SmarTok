@@ -4,7 +4,13 @@
     "transparency": "Transparence",
     "breakdown": "Détails",
     "officialWebsite": "SmarTok Officiel",
-    "supportNow": "Soutenir Maintenant"
+    "supportNow": "Soutenir Maintenant",
+    "webApp": "SmarTok",
+    "getApp": "Obtenir l'App"
+  },
+  "webapp": {
+    "exit": "Retour au Site Web",
+    "exitAria": "Quitter la démo"
   },
   "hero": {
     "badge": "Fonds d'Infrastructure de la Plateforme",
@@ -12,7 +18,8 @@
     "headlineHighlight": "Révolution Intellectuelle",
     "subtext": "Votre soutien aide à maintenir l'infrastructure de SmarTok en fonctionnement et garde la plateforme disponible pour du contenu éducatif à haute valeur. Les contributions sont strictement destinées au soutien de la plateforme et ne fournissent pas d'accès à des fonctionnalités, abonnements, badges ou contenus numériques supplémentaires dans SmarTok.",
     "videoLabel": "Vidéo Promotionnelle",
-    "scrollCta": "Soutenir la plateforme"
+    "scrollCta": "Soutenir la plateforme",
+    "downloadBtn": "Télécharger sur Google Play"
   },
   "contribution": {
     "title": "Choisissez Votre",

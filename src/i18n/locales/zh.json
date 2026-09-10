@@ -4,7 +4,13 @@
     "transparency": "透明度",
     "breakdown": "明细",
     "officialWebsite": "SmarTok官方",
-    "supportNow": "立即支持"
+    "supportNow": "立即支持",
+    "webApp": "SmarTok",
+    "getApp": "获取应用"
+  },
+  "webapp": {
+    "exit": "返回网站",
+    "exitAria": "退出演示"
   },
   "hero": {
     "badge": "平台基础设施基金",
@@ -12,7 +18,8 @@
     "headlineHighlight": "知识革命",
     "subtext": "您的支持帮助维持SmarTok的基础设施运行，并确保平台持续提供高价值的教育内容。贡献严格用于平台支持，不提供对SmarTok内额外功能、订阅、徽章或数字内容的访问权限。",
     "videoLabel": "宣传视频",
-    "scrollCta": "支持平台"
+    "scrollCta": "支持平台",
+    "downloadBtn": "在Google Play下载"
   },
   "contribution": {
     "title": "选择您的",

@@ -4,7 +4,13 @@
     "transparency": "透明性",
     "breakdown": "内訳",
     "officialWebsite": "SmarTok公式",
-    "supportNow": "今すぐサポート"
+    "supportNow": "今すぐサポート",
+    "webApp": "SmarTok",
+    "getApp": "アプリを入手"
+  },
+  "webapp": {
+    "exit": "ウェブサイトに戻る",
+    "exitAria": "デモを終了"
   },
   "hero": {
     "badge": "プラットフォームインフラ基金",
@@ -12,7 +18,8 @@
     "headlineHighlight": "支援する",
     "subtext": "あなたのサポートはSmarTokのインフラの維持に役立ち、高価値な教育コンテンツのプラットフォームを利用可能な状態に保ちます。寄付は厳密にプラットフォームのサポートのみを目的としており、SmarTok内の追加機能、サブスクリプション、バッジ、デジタルコンテンツへのアクセスを提供するものではありません。",
     "videoLabel": "プロモーション動画",
-    "scrollCta": "プラットフォームを支援する"
+    "scrollCta": "プラットフォームを支援する",
+    "downloadBtn": "Google Playでダウンロード"
   },
   "contribution": {
     "title": "あなたの",

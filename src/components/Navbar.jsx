@@ -1,9 +1,13 @@
-import { useState } from 'react'
+import { forwardRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import LanguageSwitcher from './LanguageSwitcher.jsx'
-import logoIcon from '../assets/icon.png'
 
-export default function Navbar() {
+// icon.png lives in /public and is served at /icon.png (see vite base config).
+const logoIcon = '/icon.png'
+
+const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.rios.smartok'
+
+const Navbar = forwardRef(function Navbar({ onLaunchWebApp }, launchBtnRef) {
   const { t } = useTranslation()
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -12,6 +16,38 @@ export default function Navbar() {
     { href: '#transparency', label: t('nav.transparency') },
     { href: '#breakdown', label: t('nav.breakdown') },
   ]
+
+  // "SmarTok" launch button — replicates the main site's .nav-launch-btn:
+  // dark translucent bg, cyan border, neon glow, branded two-tone text.
+  // `attachRef` ensures the shared launchBtnRef is only bound to one instance
+  // (the desktop button) so focus can be restored to it after the overlay closes.
+  const WebAppButton = ({ className = '', onAfter, attachRef = false }) => (
+    <button
+      ref={attachRef ? launchBtnRef : undefined}
+      onClick={() => {
+        onLaunchWebApp?.()
+        onAfter?.()
+      }}
+      aria-label={t('nav.webApp')}
+      className={`nav-launch-btn ${className}`}
+    >
+      <span className="text-white font-bold">Smar</span>
+      <span className="text-smartok-cyan font-bold neon-text">Tok</span>
+    </button>
+  )
+
+  // "Get the App" CTA — replicates the main site's .nav-cta gradient pill.
+  const GetAppButton = ({ className = '', onAfter }) => (
+    <a
+      href={PLAY_STORE_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={onAfter}
+      className={`nav-cta ${className}`}
+    >
+      {t('nav.getApp')}
+    </a>
+  )
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-smartok-bg/80 backdrop-blur-lg border-b border-white/5">
@@ -27,7 +63,7 @@ export default function Navbar() {
           </a>
 
           {/* Desktop nav links */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6 lg:gap-8">
             {navLinks.map((link) => (
               <a key={link.href} href={link.href} className="text-sm text-gray-400 hover:text-smartok-cyan transition-colors">
                 {link.label}
@@ -41,6 +77,8 @@ export default function Navbar() {
             >
               {t('nav.officialWebsite')}
             </a>
+            <WebAppButton attachRef />
+            <GetAppButton />
             <LanguageSwitcher />
             <a
               href="#support"
@@ -77,7 +115,7 @@ export default function Navbar() {
       {/* Mobile menu drawer */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          menuOpen ? 'max-h-[32rem] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
         <div className="px-4 py-4 space-y-1 bg-smartok-bg/95 backdrop-blur-xl border-t border-white/5">
@@ -100,8 +138,23 @@ export default function Navbar() {
           >
             {t('nav.officialWebsite')}
           </a>
+
+          {/* Primary action buttons inside the hamburger menu — full-width on
+              mobile so they expand correctly, matching the main site layout. */}
+          <div className="pt-3 mt-2 space-y-2.5 border-t border-white/5">
+            <WebAppButton
+              onAfter={() => setMenuOpen(false)}
+              className="w-full justify-center"
+            />
+            <GetAppButton
+              onAfter={() => setMenuOpen(false)}
+              className="w-full justify-center"
+            />
+          </div>
         </div>
       </div>
     </nav>
   )
-}
+})
+
+export default Navbar

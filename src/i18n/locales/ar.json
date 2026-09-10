@@ -4,7 +4,13 @@
     "transparency": "الشفافية",
     "breakdown": "التفاصيل",
     "officialWebsite": "SmarTok الرسمي",
-    "supportNow": "ادعم الآن"
+    "supportNow": "ادعم الآن",
+    "webApp": "SmarTok",
+    "getApp": "احصل على التطبيق"
+  },
+  "webapp": {
+    "exit": "العودة إلى الموقع",
+    "exitAria": "إنهاء العرض التجريبي"
   },
   "hero": {
     "badge": "صندوق البنية التحتية للمنصة",
@@ -12,7 +18,8 @@
     "headlineHighlight": "الثورة الفكرية",
     "subtext": "دعمك يساعد في الحفاظ على تشغيل البنية التحتية لـ SmarTok ويبقي المنصة متاحة للمحتوى التعليمي عالي القيمة. المساهمات مخصصة حصرياً لدعم المنصة ولا توفر الوصول إلى ميزات إضافية أو اشتراكات أو شارات أو محتوى رقمي داخل SmarTok.",
     "videoLabel": "فيديو ترويجي",
-    "scrollCta": "ادعم المنصة"
+    "scrollCta": "ادعم المنصة",
+    "downloadBtn": "حمّل من Google Play"
   },
   "contribution": {
     "title": "اختر",

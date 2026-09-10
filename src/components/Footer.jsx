@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import logoIcon from '../assets/icon.png'
+
+// icon.png lives in /public and is served at /icon.png (see vite base config).
+const logoIcon = '/icon.png'
 
 export default function Footer() {
   const { t } = useTranslation()
