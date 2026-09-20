@@ -25,6 +25,7 @@ export default function Footer() {
             <a href="https://smart.smartok.app/privacy.html" target="_blank" rel="noopener noreferrer" className="hover:text-smartok-cyan transition-colors">{t('footer.privacy')}</a>
             <Link to="/terms" className="hover:text-smartok-cyan transition-colors">{t('footer.terms')}</Link>
             <a href="#transparency" className="hover:text-smartok-cyan transition-colors">{t('footer.transparency')}</a>
+            <a href="https://store.smartok.app" target="_blank" rel="noopener noreferrer" className="text-smartok-cyan/80 hover:text-smartok-cyan transition-colors">{t('nav.store')}</a>
           </div>
         </div>
 

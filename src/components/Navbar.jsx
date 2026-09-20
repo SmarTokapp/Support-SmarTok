@@ -77,6 +77,14 @@ const Navbar = forwardRef(function Navbar({ onLaunchWebApp }, launchBtnRef) {
             >
               {t('nav.officialWebsite')}
             </a>
+            <a
+              href="https://store.smartok.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-400 hover:text-smartok-cyan transition-colors"
+            >
+              {t('nav.store')}
+            </a>
             <WebAppButton attachRef />
             <GetAppButton />
             <LanguageSwitcher />
@@ -137,6 +145,15 @@ const Navbar = forwardRef(function Navbar({ onLaunchWebApp }, launchBtnRef) {
             className="block px-4 py-3 rounded-xl text-sm text-gray-400 hover:text-smartok-cyan hover:bg-smartok-cyan/5 border border-transparent hover:border-smartok-cyan/20 transition-all"
           >
             {t('nav.officialWebsite')}
+          </a>
+          <a
+            href="https://store.smartok.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMenuOpen(false)}
+            className="block px-4 py-3 rounded-xl text-sm text-gray-400 hover:text-smartok-cyan hover:bg-smartok-cyan/5 border border-transparent hover:border-smartok-cyan/20 transition-all"
+          >
+            {t('nav.store')}
           </a>
 
           {/* Primary action buttons inside the hamburger menu — full-width on
