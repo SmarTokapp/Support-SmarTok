@@ -42,19 +42,24 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* YouTube Short embed (vertical 9:16) */}
+        {/* Creator support message — self-hosted mp4 (video 265).
+            `controls` keeps audio available: the spoken message must be
+            audible, so no forced `muted` + no autoplay (browsers would
+            block unmuted autoplay anyway). `loop` replays it. */}
         <div className="mt-14 flex justify-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <div
             className="relative rounded-2xl glass-card neon-border overflow-hidden"
-            style={{ aspectRatio: '9 / 16', width: '100%', maxWidth: '360px', maxHeight: '640px' }}
+            style={{ width: '100%', maxWidth: '480px' }}
           >
-            <iframe
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/CypM4WG8tQM"
+            <video
+              className="w-full h-auto block"
+              src="https://d3kbe080p2nfsf.cloudfront.net/videos/37/1790307590534_lv_0_20260924233429.mp4"
+              poster="https://d3kbe080p2nfsf.cloudfront.net/videos/37/1790307618657_thumb_1790307618453.jpg"
               title={t('hero.videoLabel')}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
+              controls
+              loop
+              playsInline
+              preload="metadata"
             />
           </div>
         </div>
