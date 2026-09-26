@@ -148,6 +148,8 @@
   align-items: center;
   gap: 1px;
   box-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
+  white-space: nowrap;
+  width: auto;
 }
 
 .nav-launch-btn:hover {
@@ -167,6 +169,8 @@
   font-weight: 600;
   font-size: 0.9rem;
   transition: all 0.2s ease;
+  white-space: nowrap;
+  width: auto;
 }
 
 .nav-cta:hover {
