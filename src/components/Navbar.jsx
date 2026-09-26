@@ -62,10 +62,11 @@ const Navbar = forwardRef(function Navbar({ onLaunchWebApp }, launchBtnRef) {
             </span>
           </a>
 
-          {/* Desktop nav links */}
-          <div className="hidden md:flex items-center gap-6 lg:gap-8">
+          {/* Desktop nav links — lg breakpoint (1024px) instead of md so
+              longer localized strings never overflow the glass bar */}
+          <div className="hidden lg:flex items-center gap-4 xl:gap-6">
             {navLinks.map((link) => (
-              <a key={link.href} href={link.href} className="text-sm text-gray-400 hover:text-smartok-cyan transition-colors">
+              <a key={link.href} href={link.href} className="whitespace-nowrap text-sm text-gray-400 hover:text-smartok-cyan transition-colors">
                 {link.label}
               </a>
             ))}
@@ -73,7 +74,7 @@ const Navbar = forwardRef(function Navbar({ onLaunchWebApp }, launchBtnRef) {
               href="https://smartok.app"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-gray-400 hover:text-smartok-cyan transition-colors"
+              className="whitespace-nowrap text-sm text-gray-400 hover:text-smartok-cyan transition-colors"
             >
               {t('nav.officialWebsite')}
             </a>
@@ -81,7 +82,7 @@ const Navbar = forwardRef(function Navbar({ onLaunchWebApp }, launchBtnRef) {
               href="https://store.smartok.app"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-gray-400 hover:text-smartok-cyan transition-colors"
+              className="whitespace-nowrap text-sm text-gray-400 hover:text-smartok-cyan transition-colors"
             >
               {t('nav.store')}
             </a>
@@ -90,18 +91,18 @@ const Navbar = forwardRef(function Navbar({ onLaunchWebApp }, launchBtnRef) {
             <LanguageSwitcher />
             <a
               href="#support"
-              className="px-5 py-2 rounded-lg bg-smartok-cyan/10 border border-smartok-cyan/30 text-smartok-cyan text-sm font-semibold hover:bg-smartok-cyan/20 transition-all"
+              className="whitespace-nowrap px-5 py-2 rounded-lg bg-smartok-cyan/10 border border-smartok-cyan/30 text-smartok-cyan text-sm font-semibold hover:bg-smartok-cyan/20 transition-all"
             >
               {t('nav.supportNow')}
             </a>
           </div>
 
           {/* Mobile: language selector, support button, hamburger */}
-          <div className="flex md:hidden items-center gap-3">
+          <div className="flex lg:hidden items-center gap-3">
             <LanguageSwitcher />
             <a
               href="#support"
-              className="px-3 py-1.5 rounded-lg bg-smartok-cyan/10 border border-smartok-cyan/30 text-smartok-cyan text-xs font-semibold"
+              className="whitespace-nowrap px-3 py-1.5 rounded-lg bg-smartok-cyan/10 border border-smartok-cyan/30 text-smartok-cyan text-xs font-semibold"
             >
               {t('nav.supportNow')}
             </a>
@@ -122,7 +123,7 @@ const Navbar = forwardRef(function Navbar({ onLaunchWebApp }, launchBtnRef) {
 
       {/* Mobile menu drawer */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
           menuOpen ? 'max-h-[32rem] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
