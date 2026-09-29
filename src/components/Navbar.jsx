@@ -10,6 +10,39 @@ const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.rios.s
 const Navbar = forwardRef(function Navbar({ onLaunchWebApp }, launchBtnRef) {
   const { t } = useTranslation()
   const [menuOpen, setMenuOpen] = useState(false)
+  const [shareToast, setShareToast] = useState(false)
+
+  // Native share sheet (Web Share API) with clipboard fallback —
+  // mirrors the main site's nav share button for PWA/fullscreen views.
+  const handleShare = async () => {
+    setMenuOpen(false)
+    const shareData = { title: document.title, url: window.location.href }
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData)
+      } catch {
+        /* user cancelled the share sheet */
+      }
+      return
+    }
+    try {
+      await navigator.clipboard.writeText(window.location.href)
+      setShareToast(true)
+      setTimeout(() => setShareToast(false), 2200)
+    } catch {
+      window.prompt('Copy this link:', window.location.href)
+    }
+  }
+
+  const ShareIcon = ({ className = 'w-5 h-5' }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <circle cx="18" cy="5" r="3" />
+      <circle cx="6" cy="12" r="3" />
+      <circle cx="18" cy="19" r="3" />
+      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+    </svg>
+  )
 
   const navLinks = [
     { href: '#support', label: t('nav.support') },
@@ -50,6 +83,7 @@ const Navbar = forwardRef(function Navbar({ onLaunchWebApp }, launchBtnRef) {
   )
 
   return (
+    <>
     <nav className="fixed top-0 left-0 right-0 z-50 bg-smartok-bg/80 backdrop-blur-lg border-b border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -89,6 +123,14 @@ const Navbar = forwardRef(function Navbar({ onLaunchWebApp }, launchBtnRef) {
             <WebAppButton attachRef />
             <GetAppButton />
             <LanguageSwitcher />
+            <button
+              onClick={handleShare}
+              aria-label="Share this page"
+              title="Share"
+              className="text-gray-400 hover:text-smartok-cyan transition-colors"
+            >
+              <ShareIcon />
+            </button>
             <a
               href="#support"
               className="whitespace-nowrap px-5 py-2 rounded-lg bg-smartok-cyan/10 border border-smartok-cyan/30 text-smartok-cyan text-sm font-semibold hover:bg-smartok-cyan/20 transition-all"
@@ -97,9 +139,17 @@ const Navbar = forwardRef(function Navbar({ onLaunchWebApp }, launchBtnRef) {
             </a>
           </div>
 
-          {/* Mobile: language selector, support button, hamburger */}
+          {/* Mobile: language selector, share, support button, hamburger */}
           <div className="flex lg:hidden items-center gap-3">
             <LanguageSwitcher />
+            <button
+              onClick={handleShare}
+              aria-label="Share this page"
+              title="Share"
+              className="relative w-10 h-10 flex items-center justify-center rounded-lg border border-white/10 bg-smartok-card/50 text-gray-300 hover:text-smartok-cyan hover:border-smartok-cyan/30 transition-all"
+            >
+              <ShareIcon />
+            </button>
             <a
               href="#support"
               className="whitespace-nowrap px-3 py-1.5 rounded-lg bg-smartok-cyan/10 border border-smartok-cyan/30 text-smartok-cyan text-xs font-semibold"
@@ -171,7 +221,17 @@ const Navbar = forwardRef(function Navbar({ onLaunchWebApp }, launchBtnRef) {
           </div>
         </div>
       </div>
+
     </nav>
+
+    {/* Clipboard-fallback toast — rendered outside <nav> because the nav's
+        backdrop-blur creates a containing block for fixed descendants */}
+    {shareToast && (
+      <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-[60] px-6 py-3 rounded-full bg-smartok-card/95 border border-smartok-cyan/50 text-sm text-white font-medium shadow-lg">
+        Link copied!
+      </div>
+    )}
+    </>
   )
 })
 
